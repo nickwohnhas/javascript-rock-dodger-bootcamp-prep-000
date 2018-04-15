@@ -79,7 +79,6 @@ function moveDodger(e) {
   else if (e.which === RIGHT_ARROW){
     moveDodgerRight()
   }
-  
   e.preventDefault()
   e.stopPropagation()
 }
