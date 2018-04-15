@@ -82,12 +82,7 @@ game.appendChild(rock)
   return rock
 }
 
-/**
- * End the game by clearing `gameInterval`,
- * removing all ROCKS from the DOM,
- * and removing the `moveDodger` event listener.
- * Finally, alert "YOU LOSE!" to the player.
- */
+
 function endGame() {
 clearInterval(gameInterval)
  document.removeEventListener('keydown',moveDodger,true)
@@ -107,13 +102,7 @@ function moveDodger(e) {
       
     }
   })
-  /**
-   * This function should call `moveDodgerLeft()`
-   * if the left arrow is pressed and `moveDodgerRight()`
-   * if the right arrow is pressed. (Check the constants
-   * we've declared for you above.)
-   * And be sure to use the functions declared below!
-   */
+  
 }
 
 
@@ -139,17 +128,10 @@ function moveDodgerRight() {
     
   }
 }
-  // implement me!
-  /**
-   * This function should move DODGER to the right
-   * (mabye 4 pixels?). Use window.requestAnimationFrame()!
-   */
+  
 
 
-/**
- * @param {string} p The position property
- * @returns {number} The position as an integer (without 'px')
- */
+
 function positionToInteger(p) {
   return parseInt(p.split('px')[0]) || 0
 }
