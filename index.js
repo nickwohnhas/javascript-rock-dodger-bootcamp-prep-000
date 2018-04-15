@@ -31,11 +31,11 @@ function checkCollision(rock) {
 
 function createRock(x) {
   const rock = document.createElement('div')
-  GAME.appendChild(rock)
   rock.className = 'rock'
   rock.style.left = `${x}px`
   var top = 0
   rock.style.top = top
+  GAME.appendChild(rock)
 
   function moveRock() {
     if (checkCollision(rock)){
