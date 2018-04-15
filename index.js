@@ -136,7 +136,7 @@ function moveDodger(e) {
       moveDodgerRight()
     }
     else{
-      "place"
+      e.
     }
   })
   /**
