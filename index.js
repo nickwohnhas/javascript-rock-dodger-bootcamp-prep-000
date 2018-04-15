@@ -41,8 +41,8 @@ function createRock(x) {
    rock.style.top = `${top += 2}px`
     if (checkCollision(rock)){
       endGame()
-    } else {
-      
+    } 
+    else {
       if (top < 360) {
         window.requestAnimationFrame(moveRock)
       }
@@ -59,6 +59,7 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval)
   for (var i =0;i<ROCKS.length;i++){
+    console.log(ROCKS)
     ROCKS.shift()
   }
  window.removeEventListener('keydown',moveDodger)
