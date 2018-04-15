@@ -67,6 +67,8 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval)
   document.removeEventListener('keydown',moveDodger,true)
+
+  ROCKS = []
 }
 
 function moveDodger(e) {
