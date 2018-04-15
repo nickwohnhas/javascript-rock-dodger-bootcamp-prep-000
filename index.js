@@ -38,10 +38,11 @@ function createRock(x) {
   GAME.appendChild(rock)
 
   function moveRock() {
+   rock.style.top = `${top += 2}px`
     if (checkCollision(rock)){
       endGame()
     } else {
-      rock.style.top = `${top += 2}px`
+      
       if (top < 360) {
         window.requestAnimationFrame(moveRock)
       }
