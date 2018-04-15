@@ -70,7 +70,7 @@ function endGame() {
   for (var i =0;i<ROCKS.length;i++){
     ROCKS.shift()
   }
- document.removeEventListener('keydown',moveDodger)
+ window.removeEventListener('keydown',moveDodger)
 }
 
 function moveDodger(e) {
