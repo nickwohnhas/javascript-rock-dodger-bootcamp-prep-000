@@ -46,19 +46,17 @@ function createRock(x) {
   var top = 0
   rock.style.top = top
 
-  function step() { 
-    rock.style.top = `${top += 2}px`
- 
-    if (top < 360) {
-      window.requestAnimationFrame(step)
-    }
-  }
- window.requestAnimationFrame(step)
+
   function moveRock() {
     if (checkCollision(rock)){
      endGame()
    }
-  
+  else{
+    rock.style.top = `${top += 2}px`
+  if (top < 360) {
+      window.requestAnimationFrame(step)
+    }
+  }
     
     
   }
