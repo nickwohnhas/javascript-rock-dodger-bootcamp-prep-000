@@ -136,7 +136,8 @@ function moveDodger(e) {
       moveDodgerRight()
     }
     else{
-      e.
+      e.preventDefault()
+      
     }
   })
   /**
@@ -156,8 +157,7 @@ function moveDodgerLeft() {
   if (left > 0) {
     DODGER.style.left = `${left - 1}px`
   window.requestAnimationFrame(moveDodgerLeft)
-    
-  }
+    }
 }
 
 function moveDodgerRight() {
