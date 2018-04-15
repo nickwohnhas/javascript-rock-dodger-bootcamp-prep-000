@@ -83,9 +83,9 @@ function moveDodger(e) {
       e.preventDefault()
       
     }
-  })
+  }
   
-}
+
 
 
 function moveDodgerLeft() {
