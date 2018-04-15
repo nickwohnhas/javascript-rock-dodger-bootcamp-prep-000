@@ -18,8 +18,7 @@ var gameInterval = null
  */
 
 function checkCollision(rock) {
-  // implement me!
-  // use the comments below to guide you!
+ 
   const top = positionToInteger(rock.style.top)
 
   // rocks are 20px high
@@ -81,7 +80,7 @@ game.appendChild(rock)
    */
   function moveRock() {
    
-   if (checkCollision){
+   if (checkCollision(rock)){
      endGame()
    }
    
