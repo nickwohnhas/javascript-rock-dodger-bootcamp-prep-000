@@ -58,22 +58,13 @@ game.appendChild(rock)
  
   window.requestAnimationFrame(step)
 
-  
-  
-
-
-
-  
   function moveRock() {
    
    if (checkCollision(rock)){
      endGame()
    }
    
-   
-   
-   
-  }
+}
 
  
   ROCKS.push(rock)
@@ -114,8 +105,6 @@ function moveDodgerLeft() {
     DODGER.style.left = `${left - 1}px`
   window.requestAnimationFrame(moveDodgerLeft)
     }
-
-  
 }
 
 function moveDodgerRight() {
