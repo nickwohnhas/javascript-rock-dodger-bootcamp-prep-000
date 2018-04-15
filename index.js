@@ -58,6 +58,9 @@ function createRock(x) {
     if (checkCollision(rock)){
      endGame()
    }
+  
+    
+    
   }
 ROCKS.push(rock)
 return rock
