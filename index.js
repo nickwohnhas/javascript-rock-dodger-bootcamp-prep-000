@@ -40,7 +40,7 @@ function checkCollision(rock) {
 
 function createRock(x) {
   const rock = document.createElement('div')
-  game.appendChild(rock)
+  GAME.appendChild(rock)
   rock.className = 'rock'
   rock.style.left = `${x}px`
 
