@@ -60,7 +60,7 @@ function endGame() {
   clearInterval(gameInterval)
   for (var i =0;i<ROCKS.length;i++){
     console.log(ROCKS)
-    ROCKS.remove()
+    ROCKS[i].remove()
   }
  window.removeEventListener('keydown',moveDodger)
 }
