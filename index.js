@@ -40,37 +40,29 @@ function checkCollision(rock) {
 
 function createRock(x) {
   const rock = document.createElement('div')
-game.appendChild(rock)
+  game.appendChild(rock)
   rock.className = 'rock'
   rock.style.left = `${x}px`
 
- var top = 0
+  var top = 0
 
   rock.style.top = top
 
-   function step() { 
+  function step() { 
     rock.style.top = `${top += 2}px`
  
     if (top < 360) {
       window.requestAnimationFrame(step)
     }
   }
- 
-  window.requestAnimationFrame(step)
-
+ window.requestAnimationFrame(step)
   function moveRock() {
-   
-   if (checkCollision(rock)){
+    if (checkCollision(rock)){
      endGame()
    }
-   
-}
-
- 
-  ROCKS.push(rock)
-
-  
-  return rock
+  }
+ROCKS.push(rock)
+return rock
 }
 
 
