@@ -79,9 +79,9 @@ function moveDodger(e) {
   else if (e.which === RIGHT_ARROW){
     moveDodgerRight()
   }
-  else {
-    e.preventDefault()
-  }
+  
+  e.preventDefault()
+  
 }
   
 
