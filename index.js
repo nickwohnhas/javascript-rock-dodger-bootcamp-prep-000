@@ -64,11 +64,9 @@ function createRock(x) {
   return rock
 }
 
-
 function endGame() {
-clearInterval(gameInterval)
- document.removeEventListener('keydown',moveDodger,true)
- 
+  clearInterval(gameInterval)
+  document.removeEventListener('keydown',moveDodger,true)
 }
 
 function moveDodger(e) {
