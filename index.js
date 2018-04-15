@@ -66,7 +66,6 @@ function createRock(x) {
 
 function endGame() {
   clearInterval(gameInterval)
-  console.log(ROCKS)
   for (var i =0;i<ROCKS.length;i++){
     ROCKS.shift()
   }
@@ -74,8 +73,7 @@ function endGame() {
 }
 
 function moveDodger(e) {
-  document.addEventListener('keydown',function(e){
-    if (e.which ===LEFT_ARROW){
+  if (e.which ===LEFT_ARROW){
       moveDodgerLeft()
     }
     else if (e.which === RIGHT_ARROW){
