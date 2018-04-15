@@ -102,13 +102,9 @@ function moveDodgerRight() {
  
   if (left < 360) {
     DODGER.style.left = `${left + 1}px`
-  window.requestAnimationFrame(moveDodgerRight)
-    
+    window.requestAnimationFrame(moveDodgerRight)
   }
 }
-  
-
-
 
 function positionToInteger(p) {
   return parseInt(p.split('px')[0]) || 0
